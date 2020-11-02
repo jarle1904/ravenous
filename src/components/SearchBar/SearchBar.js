@@ -5,6 +5,7 @@ import './SearchBar.css';
 class SearchBar extends React.Component {
   constructor(props){
     super(props);
+
     this.state = {
       term:'',
       location:'',
@@ -23,7 +24,7 @@ class SearchBar extends React.Component {
   }
 
   getSortByClass(sortByOption) {
-    if (this.state.sortBy == sortByOption) {
+    if (this.state.sortBy === sortByOption) {
       return 'active';
     } else {
       return '';
@@ -85,12 +86,12 @@ class SearchBar extends React.Component {
       </div>
 </div>
             
-        )
+        );
 
     }
 
 
-};
+}
 
 
 export default SearchBar;
